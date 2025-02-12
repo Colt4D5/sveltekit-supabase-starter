@@ -1,8 +1,8 @@
-import { db } from '$lib/server/db';
+  import { getOrCreateUserProfile } from './auth';
 
-export const load = (async () => {
-  const profiles = await db.query.profileTable.findMany();
+export const load = (async ({ locals }) => {
+  const userProfile = await getOrCreateUserProfile(locals)
   return {
-    profiles
+    userProfile
   }
 });
