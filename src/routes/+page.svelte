@@ -5,5 +5,5 @@
 </script>
 
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<h1 class="text-2xl mb-4">Welcome to <span class="text-[#ff9800]">SvelteKit</span>, <span class="text-[#C6F94F]">Drizzle</span>, & <span class="text-[#47D191]">Supabase</span>!</h1>
+<p>Visit <a class="text-[#ff9800]" href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the Sveltekit documentation, <a class="text-[#C6F94F]" href="https://orm.drizzle.team/docs/get-started">orm.drizzle.team/docs/get-started</a> for the Drizzle documentation, and <a class="text-[#47D191]" href="https://supabase.com/docs">supabase.com/docs</a> to read the supabase documentation.</p>
