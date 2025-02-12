@@ -13,7 +13,7 @@
   </CardHeader>
   <CardContent>
     <form method="post">
-      <Button type="submit">Sign in with Github</Button>
+      <Button href="/auth/login/github">Sign in with Github</Button>
     </form>
   </CardContent>
 </Card>
