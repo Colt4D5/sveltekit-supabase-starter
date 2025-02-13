@@ -52,6 +52,8 @@
 		"dotenv": "^16.4.7",
 		"drizzle-orm": "^0.39.3",
 		"pg": "^8.13.1",
-		"postgres": "^3.4.5"
+		"postgres": "^3.4.5",
+		"zod": "^3.24.2",
+		"zod-form-data": "^2.0.5"
 	}
 }

@@ -7,6 +7,7 @@ export const getOrCreateUserProfile = async (locals: App.Locals) => {
   const { user } = await locals.safeGetSession();
 
   if (!user) {
+    locals.user = null;
     return null;
   }
 
@@ -19,10 +20,10 @@ export const getOrCreateUserProfile = async (locals: App.Locals) => {
   }
 
   await db.insert(profileTable).values({
-      id: user.id,
-      firstName: '',
-      lastName: '',
-      email: user.email ?? '',
+    id: user.id,
+    firstName: "",
+    lastName: "",
+    email: user.email ?? "",
   });
 
   const newProfile = await db.query.profileTable.findFirst({
@@ -30,8 +31,8 @@ export const getOrCreateUserProfile = async (locals: App.Locals) => {
   });
 
   if (!newProfile) {
-    error(500, "Failed to create profile");
+    error(500, "Could not create profile");
   }
 
   return newProfile;
-}
+};
